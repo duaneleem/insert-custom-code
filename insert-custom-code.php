@@ -15,7 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       Insert Custom Code
  * Plugin URI:        https://github.com/duaneleem/insert-custom-code
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       This will give a WordPress administrator the ability to insert CSS/JS codes in the <head> or <body> of the whole WordPress site or to specific post type (posts or pages).
  * Version:           1.0.0
  * Author:            Duane Leem
  * Author URI:        https://duaneleem.com
@@ -74,9 +74,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-insert-custom-code.php';
  * @since    1.0.0
  */
 function run_insert_custom_code() {
-
 	$plugin = new Insert_Custom_Code();
 	$plugin->run();
-
 }
 run_insert_custom_code();
